@@ -11,7 +11,8 @@ tile[0] to the SPI flash during the application or to the STAR and
 TRIANGLE slice card slots.
 
 To use the module just include it in the USED_MODULES list in your
-application makefile.
+application makefile. There is no need to call any specific function
+in your application, the code will run on boot automatically.
 
 The default is to route the ports to the slice card slots. SPI Flash
 will still work for booting but cannot be accessed during the
@@ -25,4 +26,4 @@ If you do enable flash, then clearly you will not be able to access
 the pins on the slice cards connected to these ports.
 
 If this module is used when the application target is not
-``SLICEKIT-L2`` then this module will do nothing.
+``SLICEKIT-L2`` or ``SLICEKIT-L16`` then this module will do nothing.
