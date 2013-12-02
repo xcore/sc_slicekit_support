@@ -7,7 +7,7 @@
         </component>
     </components>
     <description>Slicekit support library</description>
-    <location>origin</location>
+    <location>git://github.com/xcore/sc_slicekit_support.git</location>
     <name>sc_slicekit_support</name>
     <partnumber>XM-003385-DH</partnumber>
     <release parenthash = "2fc3fc597c9d9d2bbe7073d760078a299fd9b572" version = "1.0.3rc0"></release>
