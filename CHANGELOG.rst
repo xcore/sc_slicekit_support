@@ -1,6 +1,10 @@
 sc_slicekit_support Change Log
 ==============================
 
+1.0.4
+-----
+  * Fix to the metainfo.
+
 1.0.3
 -----
   * Moved from sc_util
