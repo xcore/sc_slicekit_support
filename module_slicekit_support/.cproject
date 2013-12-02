@@ -157,9 +157,9 @@
 									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;"/>
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L16}&quot;' />
+<listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L2}&quot;' />
 <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src}&quot;' />
 <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support}&quot;' />
-<listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L2}&quot;' />
 
 								</option>
 								<inputType id = "com.xmos.cdt.xc.compiler.input.4049480" name="XC" superClass="com.xmos.cdt.xc.compiler.input"/>
@@ -272,9 +272,9 @@
 									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/gcc&quot;"/>
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L16}&quot;' />
+<listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L2}&quot;' />
 <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src}&quot;' />
 <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support}&quot;' />
-<listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L2}&quot;' />
 
 								</option>
 								<inputType id = "com.xmos.cdt.c.compiler.input.c.58074304" name="C" superClass="com.xmos.cdt.c.compiler.input.c"/>
@@ -393,9 +393,9 @@
 									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${XMOS_TOOL_PATH}/target/include/c++/4.2.1/xcore-xmos-elf&quot;"/>
                                     <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L16}&quot;' />
+<listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L2}&quot;' />
 <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src}&quot;' />
 <listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support}&quot;' />
-<listOptionValue builtIn="false" value='&quot;${workspace_loc:/module_slicekit_support/src/SLICEKIT-L2}&quot;' />
 
 								</option>
 								<inputType id = "com.xmos.cdt.cxx.compiler.input.cpp.36391378" name="C++" superClass="com.xmos.cdt.cxx.compiler.input.cpp"/>
