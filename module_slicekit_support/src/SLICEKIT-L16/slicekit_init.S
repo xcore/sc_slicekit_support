@@ -26,10 +26,8 @@ __slicekit_init:
 
 __slicekit_init_handle_flash:
   // Enable the clock and port required for doing the output
-  ldc r11, _default_clkblk
-  setc res[r11], XS1_SETC_INUSE_ON
-  setc res[r11], XS1_SETC_RUN_STARTR
-  mov r0, r11
+  ldc r0, _default_clkblk
+  setc res[r0], XS1_SETC_INUSE_ON
 
   ldw r11, cp[.Lport8d]
   setc res[r11], XS1_SETC_INUSE_ON
@@ -39,21 +37,19 @@ __slicekit_init_handle_flash:
   // move 8D6 (D42) high. This will latch the flash ports to be
   // either directed to flash or to the slice slots
 #if SLICEKIT_ENABLE_FLASH
-  ldc r1, 0x1
+  ldc r1, 1 << 6
 #else
-  ldc r1, 0x3
+  ldc r1, (1 << 6) | (1 << 7)
 #endif
-  shl r1, r1, 6
-  out res[r11],r1
+  out res[r11], r1
+  setc res[r0], XS1_SETC_RUN_STARTR
+  ldc r2, 100
+  setpt res[r11], r2
+  out res[r11], r1
   syncr res[r11]
-  ldc r1,15
-.Lloop:
-  sub r1,r1,1
-  bt r1, .Lloop
 
   // Turn port 8D off
   setc res[r11], XS1_SETC_INUSE_OFF
-
 
 .Lskip:
 
