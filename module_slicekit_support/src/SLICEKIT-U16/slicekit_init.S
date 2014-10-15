@@ -39,20 +39,30 @@ __slicekit_init_handle_flash:
   // move 8B1 (D15) high. This will latch the flash ports to be
   // either directed to flash or to the slice slots
 #if SLICEKIT_ENABLE_FLASH
-  ldc r1, 0x2
+  ldc r1, 0x0 // SPI enable
 #else
-  ldc r1, 0x3
+  ldc r1, 0x1 // SPI disable
 #endif
-  out res[r11],r1
+  out res[r11], r1
   syncr res[r11]
-  ldc r1,15
+  ldc r1, 15
 .Lloop:
-  sub r1,r1,1
+  sub r1, r1, 1
   bt r1, .Lloop
+
+#if SLICEKIT_ENABLE_FLASH
+  ldc r1, 0x2 // SPI enable + latch
+#else
+  ldc r1, 0x3 // SPI disable + latch
+#endif
+  out res[r11], r1
+  syncr res[r11]
+  ldc r1, 15
+.Lloop2:
+  sub r1, r1, 1
+  bt r1, .Lloop2
 
   // Turn port 8B off
   setc res[r11], XS1_SETC_INUSE_OFF
 
-
 .Lskip:
-
