@@ -1,6 +1,10 @@
 sc_slicekit_support Change Log
 ==============================
 
+UNRELEASED
+-----
+  * Add support for XP-SKC-U16 2V0 sliceKIT
+
 1.0.4
 -----
   * Fix to the metainfo.
